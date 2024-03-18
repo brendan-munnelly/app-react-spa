@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useEffectcd.. } from 'react-router-dom';
 import App from './App';
 
 const RootComponent = () => {
