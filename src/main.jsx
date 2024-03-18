@@ -5,17 +5,14 @@ import {
   Routes, 
   Route 
 } from "react-router-dom";
-import RootComponent from './RootComponent'; // Import the RootComponent
-
-import App from './App'; // Assuming App component is in the same directory
+import App from './App'; 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router basename={"/app-react-spa/"}>
     {/* <Router>  */}
         <Routes>
-            {/* <Route path="*" element={<App />} /> */}
-            <Route path="*" element={<RootComponent />} /> {/* Use RootComponent */}
+            <Route path="*" element={<App />} />
         </Routes>
     </Router>    
   </React.StrictMode>,
