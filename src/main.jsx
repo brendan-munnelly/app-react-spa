@@ -10,8 +10,7 @@ import App from './App';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <Router basename={"/app-react-spa/"}> */}
-    <Route path="*" element={<App />} />
-    {/* <Router>  */}
+    <Router>
         <Routes>
             <Route path="*" element={<App />} />
         </Routes>
