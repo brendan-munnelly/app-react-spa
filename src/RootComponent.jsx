@@ -1,4 +1,3 @@
-import RootComponent from './RootComponent'; 
 import { useNavigate } from 'react-router-dom';
 import App from './App';
 
