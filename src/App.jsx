@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
@@ -8,6 +11,15 @@ import { Routes, Route } from "react-router-dom";
 import './Petite.css'
   
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Perform the redirect if a redirect path is stored
+    const redirectPath = sessionStorage.redirect;
+    delete sessionStorage.redirect; // Clear the session storage
+    if (redirectPath) navigate(redirectPath);
+  }, [navigate]);
+
   return (
     <>
       <Navbar />
