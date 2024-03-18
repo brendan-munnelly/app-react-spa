@@ -1,4 +1,5 @@
-import { useNavigate, useEffect } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'
 import App from './App';
 
 const RootComponent = () => {
